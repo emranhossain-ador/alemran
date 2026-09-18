@@ -1,4 +1,5 @@
 import ServiceCard from "./ServiceCard";
+import {serviceInfo} from "../../data/services";
 
 
 const ServiceSection = () => {
@@ -12,12 +13,9 @@ const ServiceSection = () => {
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    <ServiceCard/>
-                    <ServiceCard/>
-                    <ServiceCard/>
-                    <ServiceCard/>
-                    <ServiceCard/>
-                    <ServiceCard/>
+                    {
+                        serviceInfo.map((info, i) => <ServiceCard key={i} infoData={info} />)
+                    }
                 </div>
 
             </div>
