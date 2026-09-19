@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 
+import {projectInfo} from "../../data/project";
 
 const FeatureProjectSection = () => {
     return (
@@ -12,9 +13,9 @@ const FeatureProjectSection = () => {
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    <ProjectCard/>
-                    <ProjectCard/>
-                    <ProjectCard/>
+                    {
+                        projectInfo.map((project, i) => <ProjectCard key={i} project={project}/>)
+                    }
                 </div>
 
             </div>
