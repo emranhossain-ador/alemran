@@ -1,4 +1,11 @@
-import image from "../../assets/profile.jpeg"
+
+import myImage from "../../assets/my-image.png"
+
+const social = [
+    { label: "GitHub", href: "https://github.com/emranhossain-ador" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/emran-hossain-ador/" },
+    { label: "Email", href: "mailto:emranhossain.ador@gmail.com" },
+];
 
 const HeroSection = () => {
     return (
@@ -17,7 +24,7 @@ const HeroSection = () => {
                     </div>
 
                     <div className="space-y-6">
-                        <h1 className="font-display text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">Building Next-Gen <br className="hidden sm:block"/>
+                        <h1 className="font-display text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">Building Next-Gen <br className="hidden sm:block" />
                             <span className="text-gradient">Digital Systems.</span>
                         </h1>
                         <p className="max-w-xl text-lg font-light leading-relaxed text-muted-foreground lg:text-xl">I engineer high-performance full-stack applications with a focus on clean architecture, scalable infrastructure, and seamless user experiences.</p>
@@ -30,7 +37,7 @@ const HeroSection = () => {
 
                         <a href="/cv.pdf" aria-busy="false" aria-live="polite" className="group relative inline-flex items-center gap-2 overflow-hidden rounded-sm font-semibold tracking-wide transition-all duration-300 disabled:opacity-60 px-4 py-2 text-muted-foreground hover:text-primary ">
 
-                            <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-primary/15 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
+                            <span className="pointer-events-none absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-primary/15 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-download h-5 w-5 transition-transform duration-300 group-hover:translate-y-0.5" aria-hidden="true" >
                                 <path d="M12 15V3"></path>
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -41,19 +48,18 @@ const HeroSection = () => {
                     </div>
 
                     <div className="flex items-center gap-10 pt-6">
-                        <a href="https://github.com" target="_blank" rel="noreferrer" className="group flex flex-col">
-                            <span className="mb-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-hover:text-primary">GitHub</span>
-                            <span className="h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="group flex flex-col">
-                            <span className="mb-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-hover:text-primary">LinkedIn</span>
-                            <span className="h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                        </a>
+                        {
+                            social.map((s) =>
 
-                        <a href="mailto:hello@example.com" target="_blank" rel="noreferrer" className="group flex flex-col">
-                            <span className="mb-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-hover:text-primary">Email</span>
-                            <span className="h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                        </a>
+                                <a href={s.href} target="_blank" rel="noreferrer" className="group flex flex-col">
+                                    <span className="mb-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-hover:text-primary">{s.label}</span>
+                                    <span className="h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+
+                            )
+                        }
+
+
                     </div>
 
                 </div>
@@ -63,16 +69,16 @@ const HeroSection = () => {
                     <div className="relative aspect-4/5 w-full max-w-105">
                         <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-2xl border border-border"></div>
                         <div className="group relative h-full w-full overflow-hidden rounded-2xl border border-border bg-card">
-                            <img src={image} alt="Portrait of the full-stack web developer" width="1024" height="1280" className="h-full w-full scale-105 object-cover grayscale transition-all duration-1000 group-hover:scale-100 group-hover:grayscale-0"/>
-                            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+                            <img src={myImage} alt="Portrait of the full-stack web developer" width="1024" height="1280" className="h-full w-full scale-105 object-cover grayscale transition-all duration-1000 group-hover:scale-100 group-hover:grayscale-0" />
+                            <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent opacity-60"></div>
                             <div className="absolute inset-x-6 bottom-6">
                                 <div className="flex items-center gap-4 rounded-xl border border-border bg-background/50 p-4 backdrop-blur-xl">
-                                <div className="flex flex-col">
-                                    <span className="font-display text-2xl font-bold">05+</span>
-                                    <span className="text-[10px] font-bold uppercase tracking-tight text-primary">Years in Production</span>
-                                </div>
-                                <div className="h-8 w-px bg-border"></div>
-                                <p className="text-sm leading-tight text-muted-foreground">Delivering high-end<br/>solutions globally.</p>
+                                    <div className="flex flex-col">
+                                        <span className="font-display text-2xl font-bold">05+</span>
+                                        <span className="text-[10px] font-bold uppercase tracking-tight text-primary">Years in Production</span>
+                                    </div>
+                                    <div className="h-8 w-px bg-border"></div>
+                                    <p className="text-sm leading-tight text-muted-foreground">Delivering high-end<br />solutions globally.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import SkillCard from "./SkillCard";
+import { skillsData } from "../../data/skills";
 
 const SkillSection = () => {
     return (
@@ -11,10 +12,10 @@ const SkillSection = () => {
 
             <div className="grid gap-6 md:grid-cols-3">
 
-                <SkillCard/>
-                <SkillCard/>
-                <SkillCard/>
-                
+                {
+                    skillsData.map((skill, i) => <SkillCard key={i} skill={skill} />)
+                }
+
             </div>
 
 

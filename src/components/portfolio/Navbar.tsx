@@ -4,6 +4,7 @@ import Logo from "../../assets/logo1.png"
 const Navbar = () => {
 
     const navLink = <>
+        <a href="#home" className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">Home</a>
         <a href="#about" className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">About</a>
         <a href="#services" className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">Services</a>
         <a href="#projects" className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">Projects</a>
