@@ -1,6 +1,7 @@
 import type { ProjectType } from "../types/projectType";
 import offerZone from "../assets/project-images/offerzone.png";
 import shebaZone from "../assets/project-images/sheba-zone.png";
+import devstack from "../assets/project-images/devstack.png";
 
 export const projectInfo: ProjectType[] = [
     {
@@ -31,6 +32,20 @@ export const projectInfo: ProjectType[] = [
             "Livewire",
             "Alpine.js",
             "Tailwind CSS",
+        ],
+    },
+    {
+        image: devstack,
+        name: "Devstack",
+        description:
+            "A modern, fully responsive dev stack sharing platform built with React, TypeScript, Tailwind CSS, and daisyui, featuring server-side rendering, API routes, and a clean, professional UI.",
+        liveLink: "https://devstack-liard.vercel.app/",
+        githubLink: "https://github.com/emranhossain-ador/devstack",
+        tags: [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "DaisyUI",
         ],
     }
 ];
