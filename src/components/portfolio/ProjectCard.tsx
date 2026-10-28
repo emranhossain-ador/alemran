@@ -9,7 +9,7 @@ const ProjectCard = ({project}:ProjectProps) => {
     const {image, name, description, tags, githubLink, liveLink} = project;
 
     return (
-        <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card" >
+        <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:shadow-md shadow-primary/40" >
             <div className="relative flex h-44 items-center justify-center bg-linear-to-br from-primary/25 to-accent/25">
                 <img src={image} alt={name} className="w-full h-full " />
             </div>
