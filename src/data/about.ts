@@ -4,7 +4,7 @@ import type { AboutType } from "../types/aboutType"
 export const aboutInfo:AboutType[] = [
         {
             icon: Award,
-            title: `5+`,
+            title: `3+`,
             content: 'Years Experience',
         },
         {

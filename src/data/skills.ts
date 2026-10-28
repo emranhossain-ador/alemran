@@ -39,7 +39,7 @@ export const skillsData: SkillType[] = [
             },
             {
                 techName: "Node.js",
-                persent: 0,
+                persent: 30,
             },
             {
                 techName: "MySql",
@@ -47,11 +47,11 @@ export const skillsData: SkillType[] = [
             },
             {
                 techName: "MongoDB",
-                persent: 0,
+                persent: 50,
             },
             {
                 techName: "Express.js",
-                persent: 0,
+                persent: 40,
             },
         ]
     },

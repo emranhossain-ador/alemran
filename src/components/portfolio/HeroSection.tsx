@@ -74,7 +74,7 @@ const HeroSection = () => {
                             <div className="absolute inset-x-6 bottom-6">
                                 <div className="flex items-center gap-4 rounded-xl border border-border bg-background/50 p-4 backdrop-blur-xl">
                                     <div className="flex flex-col">
-                                        <span className="font-display text-2xl font-bold">05+</span>
+                                        <span className="font-display text-2xl font-bold">03+</span>
                                         <span className="text-[10px] font-bold uppercase tracking-tight text-primary">Years in Production</span>
                                     </div>
                                     <div className="h-8 w-px bg-border"></div>

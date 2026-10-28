@@ -7,13 +7,13 @@ import { LuTwitter } from "react-icons/lu";
 const details = [
     { icon: Mail, label: "Email", value: 'emranhossain.ador@gmail.com', href: `mailto:emranhossain.ador@gmail.com` },
     { icon: Phone, label: "Phone", value: '01851384660', href: `tel:01851384660` },
-    { icon: MapPin, label: "Location", value: "Bangladesh" },
+    { icon: MapPin, label: "Location", value: "Dhaka, Bangladesh" },
 ];
 
 const socials = [
     { icon: <FaGithub className="w-5 h-5" />, href: "https://github.com/emranhossain-ador" },
     { icon: <FiLinkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/emran-hossain-ador/" },
-    { icon: <LuTwitter className="w-5 h-5" />, href: "https://twitter.com" },
+    { icon: <LuTwitter className="w-5 h-5" />, href: "https://x.com/emranhossainzx" },
 ];
 
 const field = "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary";
